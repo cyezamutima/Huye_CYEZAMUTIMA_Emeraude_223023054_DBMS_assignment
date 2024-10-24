@@ -1,0 +1,243 @@
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.3.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> create database RUHANDE;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> use RUHANDE;
+Database changed
+mysql> create table Ngoma(ID int(3),FIRST_NAME char(40),LAST_NAME char(40),GENDER char(8),PROVINCE char(60),DISTRICT char(20),SECTOR char(20),CELL char(20),EMAIL_ADRESS char(80),TELEPHONE int(15));
+Query OK, 0 rows affected, 2 warnings (0.02 sec)
+
+mysql> insert into Ngoma VALUES(1,'CYOMORO','Amatus','male','KIGALI','KICUKIRO','GATENGA','GATENGA','cyomoro@gmail.com',078111377)
+    -> insert into Ngoma VALUES(1,'CYOMORO','Amatus','male','KIGALI','KICUKIRO','GATENGA','GATENGA','cyomoro@gmail.com',078111377);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into Ngoma VALUES(1,'CYOMORO','Amatus','male','KIGALI','KICUKIRO','GATENG' at line 2
+mysql> insert into Ngoma VALUES (1, 'CYOMORO', 'Amatus', 'male', 'KIGALI', 'KICUKIRO', 'GATENGA', 'GATENGA', 'cyomoro@gmail.com', 078111377);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into Ngoma VALUES (2,'CYEZAMUTIMA', 'Emeraude', 'female', 'SOUTH', 'HUYE', 'NGOMA', 'KARUBANDA', 'cyezamutima@gamil.com', 0789330047);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into Ngoma VALUES (3, 'BORAUZIMA', 'Hortanse', 'female', 'EAST', 'NYAGATARE','NYAGATARE', 'KARANGAZI', 'borauzima@gamil.com', 0790005594);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into Ngoma VALUES (4, 'BARAKA', 'King', 'male', 'WEST', 'RUBAVU', 'GISENYI', 'GISENYI', 'baraka@gamil.com', 0781907414);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into Ngoma VALUES (5, 'CREDO', 'Jsamine', 'NORTH', 'MUSANZE', 'MUHOZA', 'MUHOZA', 'credo@gmail.com', 0790005573);
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+mysql> insert into Ngoma VALUES (5, 'CREDO', 'Jsamine', 'female', 'NORTH', 'MUSANZE', 'MUHOZA', 'MUHOZA', 'credo@gmail.com', 0790005573);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into Ngoma VALUES (6, 'REMEZO', 'Anais', 'female', 'KIGALI', 'NYARUGENGE', 'NYAMIRAMBO', 'INTWARI', 'remezo@gamil.com, 0788898489);
+    '> insert into Ngoma VALUES (6, 'REMEZO', 'Anais', 'female', 'KIGALI', 'NYARUGENGE', 'NYAMIRAMBO', 'INTWARI', 'remezo@gamil.com, 0788898489);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'REMEZO', 'Anais', 'female', 'KIGALI', 'NYARUGENGE', 'NYAMIRAMBO', 'INTWARI', 're' at line 2
+mysql> insert into Ngoma VALUES (6, 'REMEZO', 'Anais', 'female', 'KIGALI', 'NYARUGENGE', 'NYAMIRAMBO', 'INTWARI', 'remezo@gamil.com, 0788898489);
+    '>
+    '> insert into Ngoma VALUES (6, 'REMEZO', 'Anais', 'female', 'KIGALI', 'NYARUGENGE', 'NYAMIRAMBO', 'INTWARI', 'remezo@gamil.com, 0788898489);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'REMEZO', 'Anais', 'female', 'KIGALI', 'NYARUGENGE', 'NYAMIRAMBO', 'INTWARI', 're' at line 3
+mysql> insert into Ngoma VALUES (6, 'REMEZO', 'Anais', 'female', 'KIGALI', 'NYARUGENGE', 'NYAMIRAMBO', 'INTWARI', 'remezo@gamil.com, 0788898489);
+    '> '
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 2
+mysql>
+mysql> insert into Ngoma VALUES (6, 'REMEZO', 'Anais', 'female', 'KIGALI', 'NYARUGENGE', 'NYAMIRAMBO', 'INTWARI', 'remezo@gamil.com', 0788898489);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into Ngoma VALUES (7, 'SANO', 'Herve', 'male', 'SOUTH', 'KAMONYI', 'RUYENZI', 'RUYENZI', 'sano@gamil.com', 0722339912);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into Ngoma VALUES (8, 'SHYAKA', 'Kenny', 'male', 'EAST', 'KAYONZA', 'KARANGAZI', 'KAGITUMBA', 'shyaka@gmail.com', 0782345278);
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 13
+Server version: 8.3.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| emeraude_ltd       |
+| information_schema |
+| jolly              |
+| mysql              |
+| performance_schema |
+| ruhande            |
+| sys                |
++--------------------+
+7 rows in set (0.00 sec)
+
+mysql> use ruhande;
+Database changed
+mysql> insert into Ngoma VALUES (8, 'SHYAKA', 'Kenny', 'male', 'EAST', 'KAYONZA', 'KAYONZA', 'KARANGAZI', 'shyaka@gmail.com', 07823672876);
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> insert into Ngoma VALUES (9, 'ISEZERANO', 'Enock', 'male', 'WEST', 'RUSIZI', 'RUSIZI', 'KAMEMBE', 'isezerano@gmail.com', 0788336213);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into Ngoma VALUES (10, 'ICYISHATSE', 'Sharon', 'female', 'NORTH', 'BURERA', 'BUTARO', 'icyishatse@gamil.com', 0781056053);
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+mysql> insert into Ngoma VALUES (10, 'ICYISHATSE', 'Sharon', 'female', 'NORTH', 'BURERA', 'BUTARO', 'BUTARO', 'icyishatse@gamil.com', 0781056053);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select* from Ngoma;
++------+-------------+-----------+--------+----------+------------+------------+-----------+-----------------------+------------+
+| ID   | FIRST_NAME  | LAST_NAME | GENDER | PROVINCE | DISTRICT   | SECTOR     | CELL      | EMAIL_ADRESS          | TELEPHONE  |
++------+-------------+-----------+--------+----------+------------+------------+-----------+-----------------------+------------+
+|    1 | CYOMORO     | Amatus    | male   | KIGALI   | KICUKIRO   | GATENGA    | GATENGA   | cyomoro@gmail.com     |   78111377 |
+|    2 | CYEZAMUTIMA | Emeraude  | female | SOUTH    | HUYE       | NGOMA      | KARUBANDA | cyezamutima@gamil.com |  789330047 |
+|    3 | BORAUZIMA   | Hortanse  | female | EAST     | NYAGATARE  | NYAGATARE  | KARANGAZI | borauzima@gamil.com   |  790005594 |
+|    4 | BARAKA      | King      | male   | WEST     | RUBAVU     | GISENYI    | GISENYI   | baraka@gamil.com      |  781907414 |
+|    5 | CREDO       | Jsamine   | female | NORTH    | MUSANZE    | MUHOZA     | MUHOZA    | credo@gmail.com       |  790005573 |
+|    6 | REMEZO      | Anais     | female | KIGALI   | NYARUGENGE | NYAMIRAMBO | INTWARI   | remezo@gamil.com      |  788898489 |
+|    7 | SANO        | Herve     | male   | SOUTH    | KAMONYI    | RUYENZI    | RUYENZI   | sano@gamil.com        |  722339912 |
+|    8 | SHYAKA      | Kenny     | male   | EAST     | KAYONZA    | KARANGAZI  | KAGITUMBA | shyaka@gmail.com      |   78234528 |
+|    8 | SHYAKA      | Kenny     | male   | EAST     | KAYONZA    | KAYONZA    | KARANGAZI | shyaka@gmail.com      | 2147483647 |
+|    9 | ISEZERANO   | Enock     | male   | WEST     | RUSIZI     | RUSIZI     | KAMEMBE   | isezerano@gmail.com   |  788336213 |
+|   10 | ICYISHATSE  | Sharon    | female | NORTH    | BURERA     | BUTARO     | BUTARO    | icyishatse@gamil.com  |  781056053 |
++------+-------------+-----------+--------+----------+------------+------------+-----------+-----------------------+------------+
+11 rows in set (0.00 sec)
+
+mysql> alter table Ngoma add marital_status char(20);
+Query OK, 11 rows affected (0.05 sec)
+Records: 11  Duplicates: 0  Warnings: 0
+
+mysql> select* from Ngoma;
++------+-------------+-----------+--------+----------+------------+------------+-----------+-----------------------+------------+----------------+
+| ID   | FIRST_NAME  | LAST_NAME | GENDER | PROVINCE | DISTRICT   | SECTOR     | CELL      | EMAIL_ADRESS          | TELEPHONE  | marital_status |
++------+-------------+-----------+--------+----------+------------+------------+-----------+-----------------------+------------+----------------+
+|    1 | CYOMORO     | Amatus    | male   | KIGALI   | KICUKIRO   | GATENGA    | GATENGA   | cyomoro@gmail.com     |   78111377 | NULL           |
+|    2 | CYEZAMUTIMA | Emeraude  | female | SOUTH    | HUYE       | NGOMA      | KARUBANDA | cyezamutima@gamil.com |  789330047 | NULL           |
+|    3 | BORAUZIMA   | Hortanse  | female | EAST     | NYAGATARE  | NYAGATARE  | KARANGAZI | borauzima@gamil.com   |  790005594 | NULL           |
+|    4 | BARAKA      | King      | male   | WEST     | RUBAVU     | GISENYI    | GISENYI   | baraka@gamil.com      |  781907414 | NULL           |
+|    5 | CREDO       | Jsamine   | female | NORTH    | MUSANZE    | MUHOZA     | MUHOZA    | credo@gmail.com       |  790005573 | NULL           |
+|    6 | REMEZO      | Anais     | female | KIGALI   | NYARUGENGE | NYAMIRAMBO | INTWARI   | remezo@gamil.com      |  788898489 | NULL           |
+|    7 | SANO        | Herve     | male   | SOUTH    | KAMONYI    | RUYENZI    | RUYENZI   | sano@gamil.com        |  722339912 | NULL           |
+|    8 | SHYAKA      | Kenny     | male   | EAST     | KAYONZA    | KARANGAZI  | KAGITUMBA | shyaka@gmail.com      |   78234528 | NULL           |
+|    8 | SHYAKA      | Kenny     | male   | EAST     | KAYONZA    | KAYONZA    | KARANGAZI | shyaka@gmail.com      | 2147483647 | NULL           |
+|    9 | ISEZERANO   | Enock     | male   | WEST     | RUSIZI     | RUSIZI     | KAMEMBE   | isezerano@gmail.com   |  788336213 | NULL           |
+|   10 | ICYISHATSE  | Sharon    | female | NORTH    | BURERA     | BUTARO     | BUTARO    | icyishatse@gamil.com  |  781056053 | NULL           |
++------+-------------+-----------+--------+----------+------------+------------+-----------+-----------------------+------------+----------------+
+11 rows in set (0.00 sec)
+
+mysql> update table Ngoma set marital_status='married';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table Ngoma set marital_status='married'' at line 1
+mysql> update table Ngoma set mariral_status= 'single';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table Ngoma set mariral_status= 'single'' at line 1
+mysql> update table Ngoma set marital_status='married';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table Ngoma set marital_status='married'' at line 1
+mysql> update Ngoma set marital_status='married';ried';
+Query OK, 11 rows affected (0.00 sec)
+Rows matched: 11  Changed: 11  Warnings: 0
+
+    '> select* from ngoma;
+    '>
+    '> select* from ngoma;
+    '> update Ngoma set marital_status='married';ried';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ried';
+select* from ngoma;
+
+select* from ngoma;
+update Ngoma set marital_status=' at line 1
+mysql> select* from ngoma;
++------+-------------+-----------+--------+----------+------------+------------+-----------+-----------------------+------------+----------------+
+| ID   | FIRST_NAME  | LAST_NAME | GENDER | PROVINCE | DISTRICT   | SECTOR     | CELL      | EMAIL_ADRESS          | TELEPHONE  | marital_status |
++------+-------------+-----------+--------+----------+------------+------------+-----------+-----------------------+------------+----------------+
+|    1 | CYOMORO     | Amatus    | male   | KIGALI   | KICUKIRO   | GATENGA    | GATENGA   | cyomoro@gmail.com     |   78111377 | married        |
+|    2 | CYEZAMUTIMA | Emeraude  | female | SOUTH    | HUYE       | NGOMA      | KARUBANDA | cyezamutima@gamil.com |  789330047 | married        |
+|    3 | BORAUZIMA   | Hortanse  | female | EAST     | NYAGATARE  | NYAGATARE  | KARANGAZI | borauzima@gamil.com   |  790005594 | married        |
+|    4 | BARAKA      | King      | male   | WEST     | RUBAVU     | GISENYI    | GISENYI   | baraka@gamil.com      |  781907414 | married        |
+|    5 | CREDO       | Jsamine   | female | NORTH    | MUSANZE    | MUHOZA     | MUHOZA    | credo@gmail.com       |  790005573 | married        |
+|    6 | REMEZO      | Anais     | female | KIGALI   | NYARUGENGE | NYAMIRAMBO | INTWARI   | remezo@gamil.com      |  788898489 | married        |
+|    7 | SANO        | Herve     | male   | SOUTH    | KAMONYI    | RUYENZI    | RUYENZI   | sano@gamil.com        |  722339912 | married        |
+|    8 | SHYAKA      | Kenny     | male   | EAST     | KAYONZA    | KARANGAZI  | KAGITUMBA | shyaka@gmail.com      |   78234528 | married        |
+|    8 | SHYAKA      | Kenny     | male   | EAST     | KAYONZA    | KAYONZA    | KARANGAZI | shyaka@gmail.com      | 2147483647 | married        |
+|    9 | ISEZERANO   | Enock     | male   | WEST     | RUSIZI     | RUSIZI     | KAMEMBE   | isezerano@gmail.com   |  788336213 | married        |
+|   10 | ICYISHATSE  | Sharon    | female | NORTH    | BURERA     | BUTARO     | BUTARO    | icyishatse@gamil.com  |  781056053 | married        |
++------+-------------+-----------+--------+----------+------------+------------+-----------+-----------------------+------------+----------------+
+11 rows in set (0.00 sec)
+
+mysql> alter table ngoma drop telephone;
+Query OK, 11 rows affected (0.04 sec)
+Records: 11  Duplicates: 0  Warnings: 0
+
+mysql> select * from ngoma,
+    -> select * from ngoma;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select * from ngoma' at line 2
+mysql> select* from ngoma;
++------+-------------+-----------+--------+----------+------------+------------+-----------+-----------------------+----------------+
+| ID   | FIRST_NAME  | LAST_NAME | GENDER | PROVINCE | DISTRICT   | SECTOR     | CELL      | EMAIL_ADRESS          | marital_status |
++------+-------------+-----------+--------+----------+------------+------------+-----------+-----------------------+----------------+
+|    1 | CYOMORO     | Amatus    | male   | KIGALI   | KICUKIRO   | GATENGA    | GATENGA   | cyomoro@gmail.com     | married        |
+|    2 | CYEZAMUTIMA | Emeraude  | female | SOUTH    | HUYE       | NGOMA      | KARUBANDA | cyezamutima@gamil.com | married        |
+|    3 | BORAUZIMA   | Hortanse  | female | EAST     | NYAGATARE  | NYAGATARE  | KARANGAZI | borauzima@gamil.com   | married        |
+|    4 | BARAKA      | King      | male   | WEST     | RUBAVU     | GISENYI    | GISENYI   | baraka@gamil.com      | married        |
+|    5 | CREDO       | Jsamine   | female | NORTH    | MUSANZE    | MUHOZA     | MUHOZA    | credo@gmail.com       | married        |
+|    6 | REMEZO      | Anais     | female | KIGALI   | NYARUGENGE | NYAMIRAMBO | INTWARI   | remezo@gamil.com      | married        |
+|    7 | SANO        | Herve     | male   | SOUTH    | KAMONYI    | RUYENZI    | RUYENZI   | sano@gamil.com        | married        |
+|    8 | SHYAKA      | Kenny     | male   | EAST     | KAYONZA    | KARANGAZI  | KAGITUMBA | shyaka@gmail.com      | married        |
+|    8 | SHYAKA      | Kenny     | male   | EAST     | KAYONZA    | KAYONZA    | KARANGAZI | shyaka@gmail.com      | married        |
+|    9 | ISEZERANO   | Enock     | male   | WEST     | RUSIZI     | RUSIZI     | KAMEMBE   | isezerano@gmail.com   | married        |
+|   10 | ICYISHATSE  | Sharon    | female | NORTH    | BURERA     | BUTARO     | BUTARO    | icyishatse@gamil.com  | married        |
++------+-------------+-----------+--------+----------+------------+------------+-----------+-----------------------+----------------+
+11 rows in set (0.00 sec)
+
+mysql> select id,first_name,Last_name from ngoma;
++------+-------------+-----------+
+| id   | first_name  | Last_name |
++------+-------------+-----------+
+|    1 | CYOMORO     | Amatus    |
+|    2 | CYEZAMUTIMA | Emeraude  |
+|    3 | BORAUZIMA   | Hortanse  |
+|    4 | BARAKA      | King      |
+|    5 | CREDO       | Jsamine   |
+|    6 | REMEZO      | Anais     |
+|    7 | SANO        | Herve     |
+|    8 | SHYAKA      | Kenny     |
+|    8 | SHYAKA      | Kenny     |
+|    9 | ISEZERANO   | Enock     |
+|   10 | ICYISHATSE  | Sharon    |
++------+-------------+-----------+
+11 rows in set (0.00 sec)
+
+mysql> select* where gender='male' and province='east' from ngoma;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from ngoma' at line 1
+mysql> select* from ngoma where gender='male' and province='east';
++------+------------+-----------+--------+----------+----------+-----------+-----------+------------------+----------------+
+| ID   | FIRST_NAME | LAST_NAME | GENDER | PROVINCE | DISTRICT | SECTOR    | CELL      | EMAIL_ADRESS     | marital_status |
++------+------------+-----------+--------+----------+----------+-----------+-----------+------------------+----------------+
+|    8 | SHYAKA     | Kenny     | male   | EAST     | KAYONZA  | KARANGAZI | KAGITUMBA | shyaka@gmail.com | married        |
+|    8 | SHYAKA     | Kenny     | male   | EAST     | KAYONZA  | KAYONZA   | KARANGAZI | shyaka@gmail.com | married        |
++------+------------+-----------+--------+----------+----------+-----------+-----------+------------------+----------------+
+2 rows in set (0.00 sec)
+
+mysql> select* from ngoma where gender='female' or province='kigali';
++------+-------------+-----------+--------+----------+------------+------------+-----------+-----------------------+----------------+
+| ID   | FIRST_NAME  | LAST_NAME | GENDER | PROVINCE | DISTRICT   | SECTOR     | CELL      | EMAIL_ADRESS          | marital_status |
++------+-------------+-----------+--------+----------+------------+------------+-----------+-----------------------+----------------+
+|    1 | CYOMORO     | Amatus    | male   | KIGALI   | KICUKIRO   | GATENGA    | GATENGA   | cyomoro@gmail.com     | married        |
+|    2 | CYEZAMUTIMA | Emeraude  | female | SOUTH    | HUYE       | NGOMA      | KARUBANDA | cyezamutima@gamil.com | married        |
+|    3 | BORAUZIMA   | Hortanse  | female | EAST     | NYAGATARE  | NYAGATARE  | KARANGAZI | borauzima@gamil.com   | married        |
+|    5 | CREDO       | Jsamine   | female | NORTH    | MUSANZE    | MUHOZA     | MUHOZA    | credo@gmail.com       | married        |
+|    6 | REMEZO      | Anais     | female | KIGALI   | NYARUGENGE | NYAMIRAMBO | INTWARI   | remezo@gamil.com      | married        |
+|   10 | ICYISHATSE  | Sharon    | female | NORTH    | BURERA     | BUTARO     | BUTARO    | icyishatse@gamil.com  | married        |
++------+-------------+-----------+--------+----------+------------+------------+-----------+-----------------------+----------------+
+6 rows in set (0.00 sec)
